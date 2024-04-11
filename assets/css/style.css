@@ -806,16 +806,24 @@ html {
 
 					&:nth-child(1) {
 						transform: rotate(-8deg);
+						filter: grayscale(100%);
+					}
+					&:nth-child(2){
+						filter: grayscale(100%); 
+		                
 					}
 
 					&:nth-child(3) {
 						transform: rotate(8deg);
+						filter: grayscale(100%);
 					}
 
 					&:hover {
 						z-index: 1;
 						cursor: pointer;
 						transform: scale(1.1);
+						filter: grayscale(0%);
+						transition: filter 0.5s
 					}
 				}
 			}
